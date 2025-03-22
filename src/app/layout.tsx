@@ -11,6 +11,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import { Toaster } from "sonner";
+import CapstonePage from "./pages/CapstonePage";
 
 export default function Page() {
  return (
@@ -30,6 +31,7 @@ export default function Page() {
        <Route index path="/" element={<HomePage />} />
        <Route path="about-our-team" element={<AboutOurTeam />} />
        <Route path="our-projects" element={<ProjectPage />} />
+       <Route path="about-our-capstone" element={<CapstonePage />} />
       </Routes>
      </div>
     </SidebarInset>

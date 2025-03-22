@@ -69,7 +69,7 @@ const ProjectCard = () => {
         <div className="">
          <CardTitle>{data.projectName}</CardTitle>
          <CardDescription className="text-[10px]">
-          {data.createdBy}
+          Created by: {data.createdBy}
          </CardDescription>
         </div>
        </CardHeader>

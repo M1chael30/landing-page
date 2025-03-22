@@ -45,23 +45,23 @@ const OurTeamTitle = () => {
      );
     })}
    </div>
-   <p className="leading-7 [&:not(:first-child)]:mt-4">
+   <p className="leading-7 [&:not(:first-child)]:mt-4 text-justify">
     Welcome to our Capstone Project! We are a team of passionate developers—{" "}
     <strong>Michael, Mel Moses, Mark Robert, and Czianel</strong>—committed to
     revolutionizing the way students, teachers, and administrators interact
     within a school environment.
    </p>
-   <p className="leading-7 tracking-wide [&:not(:first-child)]:mt-6">
+   <p className="leading-7 tracking-wide [&:not(:first-child)]:mt-6 text-justify">
     Our project focuses on developing a{" "}
-    <strong>comprehensive school portal</strong> that streamlines communication,
-    enhances accessibility, and optimizes academic management. Our goal is to
-    create a <strong>user-friendly</strong> and <strong>efficient</strong>{" "}
-    platform that caters to the needs of students and faculty alike, ensuring a
-    seamless educational experience.
+    <strong>comprehensive student portal</strong> that streamlines
+    communication, enhances accessibility, and optimizes academic management.
+    Our goal is to create a <strong>user-friendly</strong> and{" "}
+    <strong>efficient</strong> platform that caters to the needs of students and
+    faculty alike, ensuring a seamless educational experience.
    </p>
    <Button variant={"outline"} className="mt-4">
-    <Link className="flex items-center gap-1" to={"/our-projects"}>
-     Explore Our Projects
+    <Link className="flex items-center gap-1" to={"/about-our-capstone"}>
+     Explore Our Capstone
      <LinkIcon />
     </Link>
    </Button>

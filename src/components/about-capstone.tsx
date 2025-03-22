@@ -1,4 +1,4 @@
-import { FolderDown } from "lucide-react";
+import { Bookmark } from "lucide-react";
 import {
  SidebarGroup,
  SidebarGroupContent,
@@ -16,7 +16,7 @@ export function OurCapstoneProject() {
   {
    title: "Capstone",
    url: "/about-our-capstone",
-   icon: FolderDown,
+   icon: Bookmark,
   },
  ];
 
