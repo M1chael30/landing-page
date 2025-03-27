@@ -57,7 +57,7 @@ const ProjectCard = () => {
 
  return (
   <>
-   <section className="my-2 grid auto-rows-min gap-4 md:grid-cols-2">
+   <section className="my-2 grid auto-rows-min gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
     {projectData.map((data) => {
      return (
       <Card key={data.id}>
@@ -84,15 +84,6 @@ const ProjectCard = () => {
          {data.description}
         </p>
        </CardContent>
-       <CardFooter>
-        <Button
-         variant={"default"}
-         className="cursor-pointer"
-         onClick={() => toast.error("Error not available", { duration: 1000 })}
-        >
-         Download <DownloadIcon />
-        </Button>
-       </CardFooter>
       </Card>
      );
     })}

@@ -25,10 +25,10 @@ const HomePageBody = () => {
  ];
 
  return (
-  <section className="my-2 flex justify-center items-center gap-2">
+  <section className="my-2 flex justify-center items-center gap-2 flex-col sm:flex-row">
    {datas.map((data) => {
     return (
-     <Button variant={"outline"}>
+     <Button key={data.title} variant={"outline"}>
       <Link to={data.path}>
        <h3 className="text-base font-semibold tracking-wide flex items-center gap-1.5">
         {data.title} <SquareArrowOutUpRight size={15} />

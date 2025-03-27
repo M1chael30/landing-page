@@ -29,9 +29,7 @@ const OurTeamTitle = () => {
 
  return (
   <section className="my-5">
-   <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-    Group 21
-   </h1>
+   <h1 className="scroll-m-20 text-4xl tracking-tight lg:text-5xl">Group 21</h1>
    <div className="flex gap-1 items-center my-5">
     {avatars.map((avatar) => {
      return (

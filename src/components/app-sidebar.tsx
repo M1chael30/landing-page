@@ -5,7 +5,7 @@ import SideBarHeader from "./sidebar-header";
 
 export function AppSidebar() {
  return (
-  <Sidebar collapsible="icon" variant="floating">
+  <Sidebar>
    <SideBarHeader />
    <SidebarContent>
     <OurTeam />
