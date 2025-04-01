@@ -45,6 +45,7 @@ const Problem = () => {
    <h2 className="scroll-m-20 border-b pb-2 text-3xl tracking-wide transition-colors first:mt-0 flex items-center gap-1">
     What Problems We Solved
    </h2>
+   {/* accordion */}
    <Accordion type="single" collapsible className="">
     {datas.map((data) => {
      return (
