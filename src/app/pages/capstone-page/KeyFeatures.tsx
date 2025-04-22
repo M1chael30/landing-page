@@ -1,12 +1,13 @@
 import { keyFeaturesData } from "@/constants/project-data";
 import { KeyRoundIcon } from "lucide-react";
+import portalDataFlow from "../../../assets/images/dataflow.png";
 
 const KeyFeatures = () => {
  return (
   <>
    <section className="my-2 flex justify-center">
     <img
-     src="src\assets\dataflow.png"
+     src={portalDataFlow}
      alt="student portal data flow"
      className="rounded-lg w-100 h-100"
     />
