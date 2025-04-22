@@ -1,25 +1,7 @@
+import { keyFeaturesData } from "@/constants/project-data";
 import { KeyRoundIcon } from "lucide-react";
 
 const KeyFeatures = () => {
- const keyFeaturesData = [
-  {
-   feature: "Student Information System",
-   description: "Easy access to grades, attendance, and schedules.",
-  },
-  {
-   feature: "Teacher Portal",
-   description: "Simplified grading and communication tools.",
-  },
-  {
-   feature: "Administrative Dashboard",
-   description: "Streamlined management of school operations.",
-  },
-  {
-   feature: "Interactive Features",
-   description: "Discussion boards, announcements, and event updates.",
-  },
- ];
-
  return (
   <>
    <section className="my-2 flex justify-center">
@@ -46,9 +28,9 @@ const KeyFeatures = () => {
        </tr>
       </thead>
       <tbody>
-       {keyFeaturesData.map((keydata) => {
+       {keyFeaturesData.map((keydata, index) => {
         return (
-         <tr className="m-0 border-t p-0 even:bg-muted" key={keydata.feature}>
+         <tr className="m-0 border-t p-0 even:bg-muted" key={index}>
           <td className="border tracking-wide px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
            {keydata.feature}
           </td>

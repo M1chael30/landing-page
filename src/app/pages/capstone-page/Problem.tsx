@@ -4,40 +4,8 @@ import {
  AccordionItem,
  AccordionTrigger,
 } from "@/components/ui/accordion";
+import { problemsSolved } from "@/constants/project-data";
 import { Check, CircleSmall } from "lucide-react";
-
-const datas = [
- {
-  key: "item-1",
-  title: "Disorganized Academic Records",
-  value:
-   "Eliminating manual record-keeping by providing a structured and accessible database for students and faculty.",
- },
- {
-  key: "item-2",
-  title: "Inefficient Communication",
-  value:
-   "Bridging the gap between students, teachers, and administrators through real-time updates and messaging features.",
- },
- {
-  key: "item-3",
-  title: "Time-Consuming Administrative Tasks",
-  value:
-   "Automating scheduling, attendance tracking, and grading to reduce workload and improve efficiency.",
- },
- {
-  key: "item-4",
-  title: "Limited Accessibility",
-  value:
-   "Ensuring that users can access essential academic information anytime, anywhere, on any device.",
- },
- {
-  key: "item-5",
-  title: "Lack of Engagement",
-  value:
-   "Encouraging student participation through interactive features and timely updates.",
- },
-];
 
 const Problem = () => {
  return (
@@ -47,9 +15,9 @@ const Problem = () => {
    </h2>
    {/* accordion */}
    <Accordion type="single" collapsible className="">
-    {datas.map((data) => {
+    {problemsSolved.map((data, index  ) => {
      return (
-      <AccordionItem key={data.key} value={data.key}>
+      <AccordionItem key={index} value={data.key}>
        <AccordionTrigger>
         <div className="text-base font-normal flex items-center gap-1">
          <CircleSmall size={20} />

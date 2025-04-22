@@ -13,9 +13,9 @@ const ProjectCard = () => {
  return (
   <>
    <section className="my-2 grid auto-rows-min gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-    {projectData.map((data) => {
+    {projectData.map((data, index) => {
      return (
-      <Card key={data.id}>
+      <Card key={index}>
        <CardHeader className="flex items-center gap-2">
         <Avatar>
          <AvatarImage className="object-cover" src={data.img} />
@@ -30,9 +30,12 @@ const ProjectCard = () => {
        </CardHeader>
        <CardContent>
         <ScrollArea className="h-80 ">
-         {data.projectImg?.map((img) => (
-          <div className="w-full my-3 aspect-6/3 rounded-xl overflow-hidden">
-           <img src={img} alt="project image" className="w-full h-full" />
+         {data.projectImg?.map((img, index) => (
+          <div
+           key={index}
+           className="w-full my-3 aspect-6/3 overflow-hidden flex items-center justify-center"
+          >
+           <img src={img} alt="project image" className="h-full rounded-xl" />
           </div>
          ))}
          <p className="text-sm tracking-wide my-2 text-justify">

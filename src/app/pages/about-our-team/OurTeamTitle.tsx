@@ -1,41 +1,19 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { avatars } from "@/constants/project-data";
 import { LinkIcon } from "lucide-react";
 import { Link } from "react-router";
 
 const OurTeamTitle = () => {
- const avatars = [
-  {
-   id: 1,
-   img: "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100216.jpg?ga=GA1.1.535425154.1742624681&semt=ais_hybrid",
-   nn: "MJ",
-  },
-  {
-   id: 2,
-   img: "https://img.freepik.com/free-photo/3d-cartoon-style-character_23-2151033973.jpg?ga=GA1.1.535425154.1742624681&semt=ais_hybrid",
-   nn: "MM",
-  },
-  {
-   id: 3,
-   img: "https://img.freepik.com/premium-photo/photorealistic-eye-catching-hyper-realistic-best-quality-image-white-background-generated-by-pikaso_643360-505121.jpg?ga=GA1.1.535425154.1742624681&semt=ais_hybrid",
-   nn: "MR",
-  },
-  {
-   id: 4,
-   img: "https://img.freepik.com/premium-photo/journalist-digital-avatar-generative-ai_934475-9380.jpg?ga=GA1.1.535425154.1742624681&semt=ais_hybrid",
-   nn: "CZ",
-  },
- ];
-
  return (
   <section className="my-5">
    <h1 className="scroll-m-20 text-4xl tracking-tight lg:text-5xl">Group 21</h1>
    <div className="flex gap-1 items-center my-5">
-    {avatars.map((avatar) => {
+    {avatars.map((avatar, index) => {
      return (
       <Avatar
        className="border-2 dark:border-white border-gray-700"
-       key={avatar.id}
+       key={index}
       >
        <AvatarImage src={avatar.img} className="object-cover aspect-1/1" />
        <AvatarFallback>{avatar.nn}</AvatarFallback>
