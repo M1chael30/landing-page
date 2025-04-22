@@ -4,6 +4,8 @@ import robertImg3 from "../assets/images/robert-proj-3.jpg";
 import michaelImg from "../assets/images/michael-proj.png";
 import melImg1 from "../assets/images/mel-proj1.jpg";
 import melImg2 from "../assets/images/mel-proj2.jpg";
+import ianImg1 from "../assets/images/ian-proj1.jpg";
+import ianImg2 from "../assets/images/ian-proj2.jpg";
 import {
  Avatars,
  Datas,
@@ -25,7 +27,7 @@ export const projectData: ProjectData[] = [
   createdBy: "Michael",
   img: "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100216.jpg?ga=GA1.1.535425154.1742624681&semt=ais_hybrid",
   nn: "MJ",
-  description: `I created a simple note application for practice and also to explore more thing in backend developement`,
+  description: `I built a basic note-taking app to practice and dive deeper into backend development.`,
   projectImg: [michaelImg],
  },
  {
@@ -50,12 +52,12 @@ export const projectData: ProjectData[] = [
  },
  {
   id: 4,
-  projectName: "Wala pa",
+  projectName: "Frosk App",
   createdBy: "Czianel",
   img: "https://img.freepik.com/premium-photo/journalist-digital-avatar-generative-ai_934475-9380.jpg?ga=GA1.1.535425154.1742624681&semt=ais_hybrid",
   nn: "CZ",
-  description: `Wala pa`,
-  projectImg: [],
+  description: `a sample login and registration page for a renting app. where data are saved in the local storage `,
+  projectImg: [ianImg1, ianImg2],
  },
 ];
 
